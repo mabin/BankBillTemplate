@@ -14,7 +14,7 @@ public class MainFrame extends JFrame{
 	private JTabbedPane tabbedPanel;
 	
 	public MainFrame(){
-		this.setTitle("0314,修改农行日期和工行ATM取款");
+		this.setTitle("0320,增加中信银行");
 		this.setSize(550, 400);
 		this.setLocation(0, 0);
 		this.setVisible(true);
@@ -23,10 +23,12 @@ public class MainFrame extends JFrame{
 		JPanel abc = new ABCBankPanel();
 		JPanel gh = new GongHangPanel();
 		JPanel zh = new ZhongHangPanel();
+		JPanel zx = new ZhongXinPanel();
 		tabbedPanel.add("大连银行", dalian);
 		tabbedPanel.add("农业银行",abc);
 		tabbedPanel.add("工商银行",gh);
 		tabbedPanel.add("中国银行",zh);
+		tabbedPanel.add("中信银行",zx);
 		this.add(tabbedPanel);
 		
 		
