@@ -17,6 +17,7 @@ public class TimeUtils {
 		/**
 		 * 20100301 - 2012-07-01
 		 * (12-3+1)+7+12*(12-10-1)
+		 * 
 		 */
 		if ((endYear-beginYear)>0 ){
 			months = (12-beginMonth+1)+endMonth+12*(endYear-beginYear-1);
