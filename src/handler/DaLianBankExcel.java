@@ -50,7 +50,7 @@ public class DaLianBankExcel {
             ws.getSettings().setVerticalFreeze(3);
             
 	        //**************往工作表中添加数据*****************   
-            WritableCellFormat   wcf   =   excelUtils.getCellFormat("Arial Narrow", 10); 
+            WritableCellFormat   wcf   =   excelUtils.getCellFormat("Arial", 10); 
             wcf.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
             wcf.setVerticalAlignment(VerticalAlignment.CENTRE);
             
@@ -68,7 +68,7 @@ public class DaLianBankExcel {
 	       	subjectFormat.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
 	       	subjectFormat.setVerticalAlignment(VerticalAlignment.CENTRE);
 
-	       	WritableCellFormat   title   =   excelUtils.getCellFormat("Arial Narrow", 10); 
+	       	WritableCellFormat   title   =   excelUtils.getCellFormat("Arial", 10); 
 	        title.setVerticalAlignment(VerticalAlignment.CENTRE);
 	        ws.addCell(excelUtils.getLabel(5,0,"账户明细",title)); 
 	        
@@ -104,7 +104,7 @@ public class DaLianBankExcel {
 	        
 	        
 	        jxl.write.NumberFormat nf = new jxl.write.NumberFormat("#,##0.00;(#,##0.00)"); 
-	        WritableFont numFont = new WritableFont(WritableFont.createFont("Arial Narrow"),11);
+	        WritableFont numFont = new WritableFont(WritableFont.createFont("Arial"),11);
 	        jxl.write.WritableCellFormat wcff = new jxl.write.WritableCellFormat(numFont,nf); 
 	        wcff.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4));
 	        wcff.setAlignment(Alignment.LEFT);
