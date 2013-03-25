@@ -36,8 +36,8 @@ public class DaLianBankExcel {
             ws.setColumnView(5, 10);
             ws.setColumnView(6, 6);
             ws.setColumnView(7, 5);
-            ws.setColumnView(8, 9);
-            ws.setColumnView(9, 9);
+            ws.setColumnView(8, 10);
+            ws.setColumnView(9, 10);
             ws.setColumnView(10, 9);
             ws.setColumnView(11, 7);
             
@@ -50,11 +50,11 @@ public class DaLianBankExcel {
             ws.getSettings().setVerticalFreeze(3);
             
 	        //**************往工作表中添加数据*****************   
-            WritableCellFormat   wcf   =   excelUtils.getCellFormat("Arial", 10); 
+            WritableCellFormat   wcf   =   excelUtils.getCellFormat("字典宋", 10); 
             wcf.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
             wcf.setVerticalAlignment(VerticalAlignment.CENTRE);
             
-	        WritableCellFormat   songFont   =   excelUtils.getCellFormat("宋体", 10); 
+	        WritableCellFormat   songFont   =   excelUtils.getCellFormat("字典宋", 10); 
 	        songFont.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
 	        songFont.setVerticalAlignment(VerticalAlignment.CENTRE);
 	       
@@ -64,11 +64,11 @@ public class DaLianBankExcel {
 	       	wcfN.setAlignment(Alignment.LEFT);
 	       	wcfN.setVerticalAlignment(VerticalAlignment.CENTRE);
 	       	
-	       	WritableCellFormat subjectFormat=excelUtils.getCellFormat("宋体", 10); 
+	       	WritableCellFormat subjectFormat=excelUtils.getCellFormat("字典宋", 10); 
 	       	subjectFormat.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
 	       	subjectFormat.setVerticalAlignment(VerticalAlignment.CENTRE);
 
-	       	WritableCellFormat   title   =   excelUtils.getCellFormat("Arial", 10); 
+	       	WritableCellFormat   title   =   excelUtils.getCellFormat("字典宋", 11); 
 	        title.setVerticalAlignment(VerticalAlignment.CENTRE);
 	        ws.addCell(excelUtils.getLabel(5,0,"账户明细",title)); 
 	        
