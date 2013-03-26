@@ -51,21 +51,21 @@ public class DaLianBankExcel {
             
 	        //**************往工作表中添加数据*****************   
             WritableCellFormat   wcf   =   excelUtils.getCellFormat("字典宋", 10); 
-            wcf.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
+            wcf.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(3)); 
             wcf.setVerticalAlignment(VerticalAlignment.CENTRE);
             
 	        WritableCellFormat   songFont   =   excelUtils.getCellFormat("字典宋", 10); 
-	        songFont.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
+	        songFont.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(3)); 
 	        songFont.setVerticalAlignment(VerticalAlignment.CENTRE);
 	       
 	        //NumberFormat numFormat = new NumberFormat("#,##0.00;(#,##0.00)");
 	       	WritableCellFormat wcfN = excelUtils.getCellFormat(NumberFormats.FORMAT3);
-	       	wcfN.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4));
+	       	wcfN.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(3));
 	       	wcfN.setAlignment(Alignment.LEFT);
 	       	wcfN.setVerticalAlignment(VerticalAlignment.CENTRE);
 	       	
 	       	WritableCellFormat subjectFormat=excelUtils.getCellFormat("字典宋", 10); 
-	       	subjectFormat.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4)); 
+	       	subjectFormat.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(3)); 
 	       	subjectFormat.setVerticalAlignment(VerticalAlignment.CENTRE);
 
 	       	WritableCellFormat   title   =   excelUtils.getCellFormat("字典宋", 11); 
@@ -104,9 +104,9 @@ public class DaLianBankExcel {
 	        
 	        
 	        jxl.write.NumberFormat nf = new jxl.write.NumberFormat("#,##0.00;(#,##0.00)"); 
-	        WritableFont numFont = new WritableFont(WritableFont.createFont("Arial"),11);
+	        WritableFont numFont = new WritableFont(WritableFont.createFont("wenvin"),12);
 	        jxl.write.WritableCellFormat wcff = new jxl.write.WritableCellFormat(numFont,nf); 
-	        wcff.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(4));
+	        wcff.setBorder(jxl.format.Border.BOTTOM,jxl.format.BorderLineStyle.getStyle(3));
 	        wcff.setAlignment(Alignment.LEFT);
 	        wcff.setVerticalAlignment(VerticalAlignment.CENTRE);
 	        //序号
